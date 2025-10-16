@@ -1,0 +1,51 @@
+/* ==UserStyle==
+@name         SE less underlines in chat
+@description  Reduces the underlines in chat. Links by regular users will still be underlined but bots that only post links will not. Tags and replies also have the underline striped
+@namespace    https://github.com/PurpleMagick/
+@version      1
+@author       VLAZ
+@license      MIT
+==/UserStyle== */
+
+@-moz-document domain("chat.stackexchange.com"), domain("chat.stackoverflow.com"),  domain("chat.meta.stackexchange.com") {
+    /* remove underlines from tags */
+    a:has(.ob-post-tag) {
+        text-decoration: none !important;
+    }
+    
+    /* remove underline from replies */
+    a.reply-info {
+        text-decoration: none !important;
+    }
+}
+@-moz-document domain("chat.stackoverflow.com") {
+    /* strip underlines from messages from bots */
+    .user-11995760 .messages a, /* DharmanBot */
+    .user-7418352  .messages a, /* Guttenberg */
+    .user-6817005  .messages a, /* Natty */
+    .user-6294609  .messages a, /* Queen */
+    .user-3735529  .messages a  /* SmokeDetector */
+    {
+        text-decoration: none !important;
+    }
+}
+@-moz-document domain("chat.stackexchange.com") {
+    /* strip underlines from messages from bots */
+    .user-478536 .messages a, /* metasmoke */
+    .user-256700 .messages a, /* Natty */
+    .user-120914 .messages a  /* SmokeDetector */
+    {
+        text-decoration: none !important;
+    }
+}
+
+@-moz-document domain("chat.meta.stackexchange.com") {
+    /* strip underlines from messages from bots */
+    .user-266345 .messages a /* SmokeDetector */
+    {
+        text-decoration: none !important;
+    }
+}
+
+
+
