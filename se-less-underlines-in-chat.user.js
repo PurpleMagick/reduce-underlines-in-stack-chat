@@ -32,7 +32,7 @@
 		/* remove underlines from tags */
 		a:has(.ob-post-tag) {
 		text-decoration: none !important;
-	}
+		}
 
 		/* remove underline from replies */
 		a.reply-info {
