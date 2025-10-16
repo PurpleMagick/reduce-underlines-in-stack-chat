@@ -2,6 +2,21 @@
 
 The underlines in the Stack Exchange chat can be too much in some cases. This is an attempt to reduce them to reasonable levels.
 
+# Installation
+
+This is available as both a userstyle and a userscript. Choose whichever you prefer. In case you can't choose - go with the userstyle.
+
+## Userstyle
+Install through a Userstyle manager like Stylus.
+
+[Direct install](https://github.com/PurpleMagick/reduce-underlines-in-stack-chat/raw/refs/heads/main/se-less-underlines-in-chat.user.css)
+
+## Userscript
+Install through a userscript manager like Tampermonkey or Violentmonkey.
+
+[Direct install](https://github.com/PurpleMagick/reduce-underlines-in-stack-chat/raw/refs/heads/main/se-less-underlines-in-chat.user.js)
+
+# Changes
 For all chat servers, removed underlines from:
  - Tags  \
    From  \
